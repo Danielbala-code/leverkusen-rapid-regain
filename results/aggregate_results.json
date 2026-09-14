@@ -1,0 +1,29 @@
+{
+  "study": "Rapid regain after eligible open-play ball loss",
+  "competition": "Bundesliga",
+  "season": "2023/24",
+  "matches": 306,
+  "teams": 18,
+  "eligible_losses": 38602,
+  "resolved_losses": 31933,
+  "censored_losses": 6669,
+  "leverkusen": {
+    "resolved_losses": 1883,
+    "rapid_regains": 1434,
+    "raw_rapid_regain_rate": 0.7615507,
+    "context_standardised_rate": 0.7452,
+    "hierarchical_or_vs_equal_team_mean": 1.105,
+    "or_95_interval": [0.996, 1.226],
+    "posterior_probability_above_equal_team_mean": 0.970
+  },
+  "equal_team_reference": {
+    "raw_league_rate": 0.7255,
+    "context_standardised_rate": 0.7254
+  },
+  "prior_sensitivity": [
+    {"team_effect_scale": 0.2, "or": 1.099, "posterior_probability": 0.966},
+    {"team_effect_scale": 0.5, "or": 1.105, "posterior_probability": 0.970},
+    {"team_effect_scale": 1.0, "or": 1.106, "posterior_probability": 0.970}
+  ],
+  "publication_boundary": "Aggregate research results only; no Impect event-level or derived event-level data."
+}
