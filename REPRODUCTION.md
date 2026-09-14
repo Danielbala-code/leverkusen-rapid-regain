@@ -35,3 +35,12 @@ The reported Bayesian result is a conditional Laplace approximation, not MCMC. T
 - Check the three overall audit totals above before interpreting a team result.
 - Compare Bayer Leverkusen: 1,434 regains from 1,883 resolved losses; raw rate 0.7615507.
 - Confirm that no event-level labels, raw data, or derived event tables are pushed to a public remote.
+
+
+## Fit the partially pooled team effect
+
+Install numpy and pandas, then provide a local team lookup CSV with team_id and team_name:
+
+    python src/fit_hierarchical_team_effect.py --labels D:/Impect/england-game-model/outputs/rapid_regain_labels.csv --team-map D:/Impect/impect-open-data/data/squads/squads_743.csv --team "Bayer Leverkusen" --tau 0.5
+
+If your Impect squad file is JSON rather than a CSV lookup, create a local two-column team_id/team_name lookup first. Run tau values 0.2, 0.5 and 1.0 as the documented sensitivity check. The fit is a conditional Laplace approximation; it is not an MCMC run.
