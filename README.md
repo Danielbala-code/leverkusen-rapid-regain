@@ -101,3 +101,14 @@ The public research note and methods are published here now. Source scripts will
 ## Next responsible extension
 
 Use a full MCMC hierarchical model with a match-level intercept, convergence diagnostics, and out-of-season replication before making stronger comparative claims. Keep pxT as an outcome annotation, not a regain-model input.
+
+
+## Evidence map
+
+- [Game-model decision record](docs/PROJECT_DECISIONS.md): why the Leverkusen/Tuchel lens led to rapid regain, and why other routes were rejected as headlines.
+- [Methods and mathematics](docs/METHODS_AND_MATH.md): target, partial-pooling model, standardisation and circularity controls.
+- [Reproduction guide](REPRODUCTION.md): public inputs, expected audits and local command.
+- [Aggregate result artifact](results/aggregate_results.json): machine-readable headline result only.
+- [Label-construction code](src/stage4_rapid_regain_labels.py): executable event-to-outcome step.
+
+The prior Stage 0–3 audits are documented in the decision record. They are retained as methodological evidence, not presented as equal-status results.
